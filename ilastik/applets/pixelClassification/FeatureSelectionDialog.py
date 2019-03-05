@@ -276,7 +276,7 @@ class FeatureSelectionDialog(QtWidgets.QDialog):
             ###################
             self.editor = volumeEditorWidget.VolumeEditor(self.layerstack, parent=self)
             self.volumeEditorWidget = volumeEditorWidget.VolumeEditorWidget()
-            self.volumeEditorWidget.init(self.editor)
+            self.volumeEditorWidget.init(self.editor, self.layerstack)
 
             ###################
             # This section constructs the GUI elements that are displayed on the left side of the window

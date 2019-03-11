@@ -652,7 +652,7 @@ class LayerViewerGui(with_metaclass(LayerViewerGuiMetaclass, QWidget)):
         self.editor.brushingInterpreter = clickReporter2
         
         self.editor.setInteractionMode( 'navigation' )
-        self.volumeEditorWidget.init(self.editor, self.layerstack)
+        self.volumeEditorWidget.init(self.editor)
 
         self.editor._lastImageViewFocus = 0
 
